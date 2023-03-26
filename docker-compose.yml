@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  frontend:
+      build:
+        dockerfile: Dockerfile
+        context: "./frontend"
+      ports:
+        - "3000:3000"
+      depends_on:
+        - backend
+      volumes:
+        - /app/node_modules
+        - ./frontend:/app
+    
+
+  backend:
+    build: backend/.
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+
+
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
