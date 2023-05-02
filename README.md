@@ -62,9 +62,6 @@ Projenin çalışması için ilk:
 
 Uygulamaya erişmek için, tarayıcınızda http://localhost:3000 adresine gidin.
 
-## 
-#### registrationKey:
-8befae2c22b762b8fb2830d424cc9f4cb07f9d77e4fb261701a49ada31d783e7 
 
 ## Resim
 ![img2](https://user-images.githubusercontent.com/36985898/227756781-52b6c006-f8ed-480d-9a3f-ef853c3e0d80.jpg)
